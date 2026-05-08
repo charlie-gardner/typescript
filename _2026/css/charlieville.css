@@ -1,0 +1,287 @@
+/* 
+2024-12-30
+from
+.boxpadding2{margin-left:2%;width:96%;}
+.boxpadding4{margin-left:4%;width:92%;}
+to
+.boxpadding2{padding-left:2%;width:98%;}
+.boxpadding4{padding-left:4%;width:96%;}
+
+
+2018.04.19
+this makes the fonts alot more stable:
+you couldnt tell if they would overflow
+so you had to make the box sizes bigger
+changed:
+from:   font-size:1em;
+to:     font-size:4vw;
+h1{font-size:10vw;font-family:Century,serif;}
+h2{font-size: 8vw;font-family:Century,serif;}
+
+2018.04.19
+will use % for widths instead of vw fix scollbar overflow
+heights remain vw
+*/
+
+body{background:lightblue;
+margin:0px;border:0px;padding: 0px;}
+
+section,textarea,canvas,video,iframe,hr{
+position: relative;float:left;
+margin:0px;border:0px;padding:0px;
+width:100%;height:100%;
+color:blue;font-size:3.7vw;
+font-family:Arial,Helvetica,sans-serif;
+background:white;/*navajowhite looks bad when slow */
+background-size:100% 100%;
+overflow:hidden;}
+
+.textcolor{color:black;background-color:#ededcb;}
+
+.boxpadding2{padding-left:2%;width:98%;}
+.boxpadding4{padding-left:4%;width:96%;}
+
+ol,ul{padding-left:8%;font-size:3.7vw;} /*fixes moving*/
+
+li{margin-left:2%;width:94%;font-size:3.7vw;}
+
+table{font-size:3.7vw;}
+
+a{color:white;background:transparent;font-size:3.7vw;}
+
+img{width:100%;height:100%;}
+
+br{border:0px;}
+
+h1,h2,h3,h4,h5,h6
+{margin:0px;border:0px;padding: 0px;}
+
+h1{font-size:10vw;font-family:Century,serif;}
+h2{font-size: 8vw;font-family:Century,serif;}
+h3{font-size: 6vw;font-family:Century,serif;}
+h4{font-size: 4vw;font-family:Century,serif;}
+h5{font-size: 3.7vw;font-family:Century,serif;}
+h6{font-size: 3vw;font-family:Century,serif;}
+
+/*.boxcover and box are deprecated use <section>*/
+.boxcover{width:100%;height:100%;}
+.box{width:100%;height:100%;}
+
+.box1  {margin-left:0.25%;margin-top:0.25vw;width:8.051%;height:100%;}
+.box1x1{margin-left:0.249%;margin-top:0.249vw;width:8.051%;height:9.0574vw;}
+.box1x2{margin-left:0.249%;margin-top:0.249vw;width:8.051%;height:18.3638vw;}
+.box1x3{margin-left:0.249%;margin-top:0.249vw;width:8.051%;height:27.6701vw;}
+.box1x4{margin-left:0.249%;margin-top:0.249vw;width:8.051%;height:36.9765vw;}
+.box1x5{margin-left:0.249%;margin-top:0.249vw;width:8.051%;height:46.2829vw;}
+.box1x6{margin-left:0.249%;margin-top:0.249vw;width:8.051%;height:55.5892vw;}
+.box1x7{margin-left:0.249%;margin-top:0.249vw;width:8.051%;height:64.8956vw;}
+.box1x8{margin-left:0.249%;margin-top:0.249vw;width:8.051%;height:74.202vw;}
+.box1x9{margin-left:0.249%;margin-top:0.249vw;width:8.051%;height:83.5084vw;}
+.box1x10{margin-left:0.249%;margin-top:0.249vw;width:8.051%;height:92.8148vw;}
+.box1x11{margin-left:0.249%;margin-top:0.249vw;width:8.051%;height:102.1211vw;}
+.box1x12{margin-left:0.249%;margin-top:0.249vw;width:8.051%;height:111.4275vw;}
+.box1x13{margin-left:0.249%;margin-top:0.249vw;width:8.051%;height:120.7339vw;}
+.box1x14{margin-left:0.249%;margin-top:0.249vw;width:8.051%;height:130.0403vw;}
+.box1x15{margin-left:0.249%;margin-top:0.249vw;width:8.051%;height:139.3466vw;}
+.box1x16{margin-left:0.249%;margin-top:0.249vw;width:8.051%;height:148.653vw;}
+
+.box2  {margin-left:0.25%;margin-top:0.25vw;width:16.351%;height:100%;}
+.box2x1{margin-left:0.249%;margin-top:0.249vw;width:16.351%;height:9.0574vw;}
+.box2x2{margin-left:0.249%;margin-top:0.249vw;width:16.351%;height:18.3638vw;}
+.box2x3{margin-left:0.249%;margin-top:0.249vw;width:16.351%;height:27.6701vw;}
+.box2x4{margin-left:0.249%;margin-top:0.249vw;width:16.351%;height:36.9765vw;}
+.box2x5{margin-left:0.249%;margin-top:0.249vw;width:16.351%;height:46.2829vw;}
+.box2x6{margin-left:0.249%;margin-top:0.249vw;width:16.351%;height:55.5892vw;}
+.box2x7{margin-left:0.249%;margin-top:0.249vw;width:16.351%;height:64.8956vw;}
+.box2x8{margin-left:0.249%;margin-top:0.249vw;width:16.351%;height:74.202vw;}
+.box2x9{margin-left:0.249%;margin-top:0.249vw;width:16.351%;height:83.5084vw;}
+.box2x10{margin-left:0.249%;margin-top:0.249vw;width:16.351%;height:92.8148vw;}
+.box2x11{margin-left:0.249%;margin-top:0.249vw;width:16.351%;height:102.1211vw;}
+.box2x12{margin-left:0.249%;margin-top:0.249vw;width:16.351%;height:111.4275vw;}
+.box2x13{margin-left:0.249%;margin-top:0.249vw;width:16.351%;height:120.7339vw;}
+.box2x14{margin-left:0.249%;margin-top:0.249vw;width:16.351%;height:130.0403vw;}
+.box2x15{margin-left:0.249%;margin-top:0.249vw;width:16.351%;height:139.3466vw;}
+.box2x16{margin-left:0.249%;margin-top:0.249vw;width:16.351%;height:148.653vw;}
+
+.box3  {margin-left:0.25%;margin-top:0.25vw;width:24.651%;height:100%;}
+.box3x1{margin-left:0.249%;margin-top:0.249vw;width:24.651%;height:9.0574vw;}
+.box3x2{margin-left:0.249%;margin-top:0.249vw;width:24.651%;height:18.3638vw;}
+.box3x3{margin-left:0.249%;margin-top:0.249vw;width:24.651%;height:27.6701vw;}
+.box3x4{margin-left:0.249%;margin-top:0.249vw;width:24.651%;height:36.9765vw;}
+.box3x5{margin-left:0.249%;margin-top:0.249vw;width:24.651%;height:46.2829vw;}
+.box3x6{margin-left:0.249%;margin-top:0.249vw;width:24.651%;height:55.5892vw;}
+.box3x7{margin-left:0.249%;margin-top:0.249vw;width:24.651%;height:64.8956vw;}
+.box3x8{margin-left:0.249%;margin-top:0.249vw;width:24.651%;height:74.202vw;}
+.box3x9{margin-left:0.249%;margin-top:0.249vw;width:24.651%;height:83.5084vw;}
+.box3x10{margin-left:0.249%;margin-top:0.249vw;width:24.651%;height:92.8148vw;}
+.box3x11{margin-left:0.249%;margin-top:0.249vw;width:24.651%;height:102.1211vw;}
+.box3x12{margin-left:0.249%;margin-top:0.249vw;width:24.651%;height:111.4275vw;}
+.box3x13{margin-left:0.249%;margin-top:0.249vw;width:24.651%;height:120.7339vw;}
+.box3x14{margin-left:0.249%;margin-top:0.249vw;width:24.651%;height:130.0403vw;}
+.box3x15{margin-left:0.249%;margin-top:0.249vw;width:24.651%;height:139.3466vw;}
+.box3x16{margin-left:0.249%;margin-top:0.249vw;width:24.651%;height:148.653vw;}
+
+.box4  {margin-left:0.25%;margin-top:0.25vw;width:32.951%;height:100%;}
+.box4x1{margin-left:0.249%;margin-top:0.249vw;width:32.951%;height:9.0574vw;}
+.box4x2{margin-left:0.249%;margin-top:0.249vw;width:32.951%;height:18.3638vw;}
+.box4x3{margin-left:0.249%;margin-top:0.249vw;width:32.951%;height:27.6701vw;}
+.box4x4{margin-left:0.249%;margin-top:0.249vw;width:32.951%;height:36.9765vw;}
+.box4x5{margin-left:0.249%;margin-top:0.249vw;width:32.951%;height:46.2829vw;}
+.box4x6{margin-left:0.249%;margin-top:0.249vw;width:32.951%;height:55.5892vw;}
+.box4x7{margin-left:0.249%;margin-top:0.249vw;width:32.951%;height:64.8956vw;}
+.box4x8{margin-left:0.249%;margin-top:0.249vw;width:32.951%;height:74.202vw;}
+.box4x9{margin-left:0.249%;margin-top:0.249vw;width:32.951%;height:83.5084vw;}
+.box4x10{margin-left:0.249%;margin-top:0.249vw;width:32.951%;height:92.8148vw;}
+.box4x11{margin-left:0.249%;margin-top:0.249vw;width:32.951%;height:102.1211vw;}
+.box4x12{margin-left:0.249%;margin-top:0.249vw;width:32.951%;height:111.4275vw;}
+.box4x13{margin-left:0.249%;margin-top:0.249vw;width:32.951%;height:120.7339vw;}
+.box4x14{margin-left:0.249%;margin-top:0.249vw;width:32.951%;height:130.0403vw;}
+.box4x15{margin-left:0.249%;margin-top:0.249vw;width:32.951%;height:139.3466vw;}
+.box4x16{margin-left:0.249%;margin-top:0.249vw;width:32.951%;height:148.653vw;}
+
+.box5  {margin-left:0.25%;margin-top:0.25vw;width:41.251%;height:100%;}
+.box5x1{margin-left:0.249%;margin-top:0.249vw;width:41.251%;height:9.0574vw;}
+.box5x2{margin-left:0.249%;margin-top:0.249vw;width:41.251%;height:18.3638vw;}
+.box5x3{margin-left:0.249%;margin-top:0.249vw;width:41.251%;height:27.6701vw;}
+.box5x4{margin-left:0.249%;margin-top:0.249vw;width:41.251%;height:36.9765vw;}
+.box5x5{margin-left:0.249%;margin-top:0.249vw;width:41.251%;height:46.2829vw;}
+.box5x6{margin-left:0.249%;margin-top:0.249vw;width:41.251%;height:55.5892vw;}
+.box5x7{margin-left:0.249%;margin-top:0.249vw;width:41.251%;height:64.8956vw;}
+.box5x8{margin-left:0.249%;margin-top:0.249vw;width:41.251%;height:74.202vw;}
+.box5x9{margin-left:0.249%;margin-top:0.249vw;width:41.251%;height:83.5084vw;}
+.box5x10{margin-left:0.249%;margin-top:0.249vw;width:41.251%;height:92.8148vw;}
+.box5x11{margin-left:0.249%;margin-top:0.249vw;width:41.251%;height:102.1211vw;}
+.box5x12{margin-left:0.249%;margin-top:0.249vw;width:41.251%;height:111.4275vw;}
+.box5x13{margin-left:0.249%;margin-top:0.249vw;width:41.251%;height:120.7339vw;}
+.box5x14{margin-left:0.249%;margin-top:0.249vw;width:41.251%;height:130.0403vw;}
+.box5x15{margin-left:0.249%;margin-top:0.249vw;width:41.251%;height:139.3466vw;}
+.box5x16{margin-left:0.249%;margin-top:0.249vw;width:41.251%;height:148.653vw;}
+
+.box6  {margin-left:0.25%;margin-top:0.25vw;width:49.551%;height:100%;}
+.box6x1{margin-left:0.249%;margin-top:0.249vw;width:49.551%;height:9.0574vw;}
+.box6x2{margin-left:0.249%;margin-top:0.249vw;width:49.551%;height:18.3638vw;}
+.box6x3{margin-left:0.249%;margin-top:0.249vw;width:49.551%;height:27.6701vw;}
+.box6x4{margin-left:0.249%;margin-top:0.249vw;width:49.551%;height:36.9765vw;}
+.box6x5{margin-left:0.249%;margin-top:0.249vw;width:49.551%;height:46.2829vw;}
+.box6x6{margin-left:0.249%;margin-top:0.249vw;width:49.551%;height:55.5892vw;}
+.box6x7{margin-left:0.249%;margin-top:0.249vw;width:49.551%;height:64.8956vw;}
+.box6x8{margin-left:0.249%;margin-top:0.249vw;width:49.551%;height:74.202vw;}
+.box6x9{margin-left:0.249%;margin-top:0.249vw;width:49.551%;height:83.5084vw;}
+.box6x10{margin-left:0.249%;margin-top:0.249vw;width:49.551%;height:92.8148vw;}
+.box6x11{margin-left:0.249%;margin-top:0.249vw;width:49.551%;height:102.1211vw;}
+.box6x12{margin-left:0.249%;margin-top:0.249vw;width:49.551%;height:111.4275vw;}
+.box6x13{margin-left:0.249%;margin-top:0.249vw;width:49.551%;height:120.7339vw;}
+.box6x14{margin-left:0.249%;margin-top:0.249vw;width:49.551%;height:130.0403vw;}
+.box6x15{margin-left:0.249%;margin-top:0.249vw;width:49.551%;height:139.3466vw;}
+.box6x16{margin-left:0.249%;margin-top:0.249vw;width:49.551%;height:148.653vw;}
+
+.box7  {margin-left:0.25%;margin-top:0.25vw;width:57.851%;height:100%;}
+.box7x1{margin-left:0.249%;margin-top:0.249vw;width:57.851%;height:9.0574vw;}
+.box7x2{margin-left:0.249%;margin-top:0.249vw;width:57.851%;height:18.3638vw;}
+.box7x3{margin-left:0.249%;margin-top:0.249vw;width:57.851%;height:27.6701vw;}
+.box7x4{margin-left:0.249%;margin-top:0.249vw;width:57.851%;height:36.9765vw;}
+.box7x5{margin-left:0.249%;margin-top:0.249vw;width:57.851%;height:46.2829vw;}
+.box7x6{margin-left:0.249%;margin-top:0.249vw;width:57.851%;height:55.5892vw;}
+.box7x7{margin-left:0.249%;margin-top:0.249vw;width:57.851%;height:64.8956vw;}
+.box7x8{margin-left:0.249%;margin-top:0.249vw;width:57.851%;height:74.202vw;}
+.box7x9{margin-left:0.249%;margin-top:0.249vw;width:57.851%;height:83.5084vw;}
+.box7x10{margin-left:0.249%;margin-top:0.249vw;width:57.851%;height:92.8148vw;}
+.box7x11{margin-left:0.249%;margin-top:0.249vw;width:57.851%;height:102.1211vw;}
+.box7x12{margin-left:0.249%;margin-top:0.249vw;width:57.851%;height:111.4275vw;}
+.box7x13{margin-left:0.249%;margin-top:0.249vw;width:57.851%;height:120.7339vw;}
+.box7x14{margin-left:0.249%;margin-top:0.249vw;width:57.851%;height:130.0403vw;}
+.box7x15{margin-left:0.249%;margin-top:0.249vw;width:57.851%;height:139.3466vw;}
+.box7x16{margin-left:0.249%;margin-top:0.249vw;width:57.851%;height:148.653vw;}
+
+.box8  {margin-left:0.25%;margin-top:0.25vw;width:66.151%;height:100%;}
+.box8x1{margin-left:0.249%;margin-top:0.249vw;width:66.151%;height:9.0574vw;}
+.box8x2{margin-left:0.249%;margin-top:0.249vw;width:66.151%;height:18.3638vw;}
+.box8x3{margin-left:0.249%;margin-top:0.249vw;width:66.151%;height:27.6701vw;}
+.box8x4{margin-left:0.249%;margin-top:0.249vw;width:66.151%;height:36.9765vw;}
+.box8x5{margin-left:0.249%;margin-top:0.249vw;width:66.151%;height:46.2829vw;}
+.box8x6{margin-left:0.249%;margin-top:0.249vw;width:66.151%;height:55.5892vw;}
+.box8x7{margin-left:0.249%;margin-top:0.249vw;width:66.151%;height:64.8956vw;}
+.box8x8{margin-left:0.249%;margin-top:0.249vw;width:66.151%;height:74.202vw;}
+.box8x9{margin-left:0.249%;margin-top:0.249vw;width:66.151%;height:83.5084vw;}
+.box8x10{margin-left:0.249%;margin-top:0.249vw;width:66.151%;height:92.8148vw;}
+.box8x11{margin-left:0.249%;margin-top:0.249vw;width:66.151%;height:102.1211vw;}
+.box8x12{margin-left:0.249%;margin-top:0.249vw;width:66.151%;height:111.4275vw;}
+.box8x13{margin-left:0.249%;margin-top:0.249vw;width:66.151%;height:120.7339vw;}
+.box8x14{margin-left:0.249%;margin-top:0.249vw;width:66.151%;height:130.0403vw;}
+.box8x15{margin-left:0.249%;margin-top:0.249vw;width:66.151%;height:139.3466vw;}
+.box8x16{margin-left:0.249%;margin-top:0.249vw;width:66.151%;height:148.653vw;}
+
+.box9  {margin-left:0.25%;margin-top:0.25vw;width:74.451%;height:100%;}
+.box9x1{margin-left:0.249%;margin-top:0.249vw;width:74.451%;height:9.0574vw;}
+.box9x2{margin-left:0.249%;margin-top:0.249vw;width:74.451%;height:18.3638vw;}
+.box9x3{margin-left:0.249%;margin-top:0.249vw;width:74.451%;height:27.6701vw;}
+.box9x4{margin-left:0.249%;margin-top:0.249vw;width:74.451%;height:36.9765vw;}
+.box9x5{margin-left:0.249%;margin-top:0.249vw;width:74.451%;height:46.2829vw;}
+.box9x6{margin-left:0.249%;margin-top:0.249vw;width:74.451%;height:55.5892vw;}
+.box9x7{margin-left:0.249%;margin-top:0.249vw;width:74.451%;height:64.8956vw;}
+.box9x8{margin-left:0.249%;margin-top:0.249vw;width:74.451%;height:74.202vw;}
+.box9x9{margin-left:0.249%;margin-top:0.249vw;width:74.451%;height:83.5084vw;}
+.box9x10{margin-left:0.249%;margin-top:0.249vw;width:74.451%;height:92.8148vw;}
+.box9x11{margin-left:0.249%;margin-top:0.249vw;width:74.451%;height:102.1211vw;}
+.box9x12{margin-left:0.249%;margin-top:0.249vw;width:74.451%;height:111.4275vw;}
+.box9x13{margin-left:0.249%;margin-top:0.249vw;width:74.451%;height:120.7339vw;}
+.box9x14{margin-left:0.249%;margin-top:0.249vw;width:74.451%;height:130.0403vw;}
+.box9x15{margin-left:0.249%;margin-top:0.249vw;width:74.451%;height:139.3466vw;}
+.box9x16{margin-left:0.249%;margin-top:0.249vw;width:74.451%;height:148.653vw;}
+
+.box10  {margin-left:0.25%;margin-top:0.25vw;width:82.751%;height:100%;}
+.box10x1{margin-left:0.249%;margin-top:0.249vw;width:82.751%;height:9.0574vw;}
+.box10x2{margin-left:0.249%;margin-top:0.249vw;width:82.751%;height:18.3638vw;}
+.box10x3{margin-left:0.249%;margin-top:0.249vw;width:82.751%;height:27.6701vw;}
+.box10x4{margin-left:0.249%;margin-top:0.249vw;width:82.751%;height:36.9765vw;}
+.box10x5{margin-left:0.249%;margin-top:0.249vw;width:82.751%;height:46.2829vw;}
+.box10x6{margin-left:0.249%;margin-top:0.249vw;width:82.751%;height:55.5892vw;}
+.box10x7{margin-left:0.249%;margin-top:0.249vw;width:82.751%;height:64.8956vw;}
+.box10x8{margin-left:0.249%;margin-top:0.249vw;width:82.751%;height:74.202vw;}
+.box10x9{margin-left:0.249%;margin-top:0.249vw;width:82.751%;height:83.5084vw;}
+.box10x10{margin-left:0.249%;margin-top:0.249vw;width:82.751%;height:92.8148vw;}
+.box10x11{margin-left:0.249%;margin-top:0.249vw;width:82.751%;height:102.1211vw;}
+.box10x12{margin-left:0.249%;margin-top:0.249vw;width:82.751%;height:111.4275vw;}
+.box10x13{margin-left:0.249%;margin-top:0.249vw;width:82.751%;height:120.7339vw;}
+.box10x14{margin-left:0.249%;margin-top:0.249vw;width:82.751%;height:130.0403vw;}
+.box10x15{margin-left:0.249%;margin-top:0.249vw;width:82.751%;height:139.3466vw;}
+.box10x16{margin-left:0.249%;margin-top:0.249vw;width:82.751%;height:148.653vw;}
+
+.box11  {margin-left:0.25%;margin-top:0.25vw;width:91.051%;height:100%;}
+.box11x1{margin-left:0.249%;margin-top:0.249vw;width:91.051%;height:9.0574vw;}
+.box11x2{margin-left:0.249%;margin-top:0.249vw;width:91.051%;height:18.3638vw;}
+.box11x3{margin-left:0.249%;margin-top:0.249vw;width:91.051%;height:27.6701vw;}
+.box11x4{margin-left:0.249%;margin-top:0.249vw;width:91.051%;height:36.9765vw;}
+.box11x5{margin-left:0.249%;margin-top:0.249vw;width:91.051%;height:46.2829vw;}
+.box11x6{margin-left:0.249%;margin-top:0.249vw;width:91.051%;height:55.5892vw;}
+.box11x7{margin-left:0.249%;margin-top:0.249vw;width:91.051%;height:64.8956vw;}
+.box11x8{margin-left:0.249%;margin-top:0.249vw;width:91.051%;height:74.202vw;}
+.box11x9{margin-left:0.249%;margin-top:0.249vw;width:91.051%;height:83.5084vw;}
+.box11x10{margin-left:0.249%;margin-top:0.249vw;width:91.051%;height:92.8148vw;}
+.box11x11{margin-left:0.249%;margin-top:0.249vw;width:91.051%;height:102.1211vw;}
+.box11x12{margin-left:0.249%;margin-top:0.249vw;width:91.051%;height:111.4275vw;}
+.box11x13{margin-left:0.249%;margin-top:0.249vw;width:91.051%;height:120.7339vw;}
+.box11x14{margin-left:0.249%;margin-top:0.249vw;width:91.051%;height:130.0403vw;}
+.box11x15{margin-left:0.249%;margin-top:0.249vw;width:91.051%;height:139.3466vw;}
+.box11x16{margin-left:0.249%;margin-top:0.249vw;width:91.051%;height:148.653vw;}
+
+.box12  {margin-left:0.25%;margin-top:0.25vw;width:99.351%;height:100%;}
+.box12x1{margin-left:0.249%;margin-top:0.249vw;width:99.351%;height:9.0574vw;}
+.box12x2{margin-left:0.249%;margin-top:0.249vw;width:99.351%;height:18.3638vw;}
+.box12x3{margin-left:0.249%;margin-top:0.249vw;width:99.351%;height:27.6701vw;}
+.box12x4{margin-left:0.249%;margin-top:0.249vw;width:99.351%;height:36.9765vw;}
+.box12x5{margin-left:0.249%;margin-top:0.249vw;width:99.351%;height:46.2829vw;}
+.box12x6{margin-left:0.249%;margin-top:0.249vw;width:99.351%;height:55.5892vw;}
+.box12x7{margin-left:0.249%;margin-top:0.249vw;width:99.351%;height:64.8956vw;}
+.box12x8{margin-left:0.249%;margin-top:0.249vw;width:99.351%;height:74.202vw;}
+.box12x9{margin-left:0.249%;margin-top:0.249vw;width:99.351%;height:83.5084vw;}
+.box12x10{margin-left:0.249%;margin-top:0.249vw;width:99.351%;height:92.8148vw;}
+.box12x11{margin-left:0.249%;margin-top:0.249vw;width:99.351%;height:102.1211vw;}
+.box12x12{margin-left:0.249%;margin-top:0.249vw;width:99.351%;height:111.4275vw;}
+.box12x13{margin-left:0.249%;margin-top:0.249vw;width:99.351%;height:120.7339vw;}
+.box12x14{margin-left:0.249%;margin-top:0.249vw;width:99.351%;height:130.0403vw;}
+.box12x15{margin-left:0.249%;margin-top:0.249vw;width:99.351%;height:139.3466vw;}
+.box12x16{margin-left:0.249%;margin-top:0.249vw;width:99.351%;height:148.653vw;}
+
+
+/* Copyright © Charles Robert James Gardner 2018 */
